@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>SURAAJ JEWELLERS (सूरज ज्वेलर्स) | Fine High Jewellery • Firozabad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.5">
+  <title>SURAAJ JEWELLERS (सूरज ज्वेलर्स) | Fine Gold, Silver & Diamond Jewellery • Firozabad</title>
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -26,98 +26,75 @@
       -webkit-tap-highlight-color: transparent;
     }
     body {
-      background-color: #0c0c10;
+      background-color: #08080a;
       color: #FDFCF8;
       font-family: 'Montserrat', sans-serif;
       overflow-x: hidden;
     }
-    .font-cinzel { font-family: 'Cinzel', serif; }
+    .font-cormorant { font-family: 'Cormorant Garamond', serif; }
+    .font-playfair { font-family: 'Playfair Display', serif; }
     
     .gold-gradient {
-      background: linear-gradient(135deg, #FFF1D0 0%, #D4AF37 50%, #997420 100%);
+      background: linear-gradient(135deg, #FFF1D0 0%, #C9A86A 50%, #9C7C3F 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
     .gold-bg {
-      background: linear-gradient(135deg, #FFF1D0 0%, #D4AF37 50%, #997420 100%);
+      background: linear-gradient(135deg, #FFF1D0 0%, #C9A86A 50%, #9C7C3F 100%);
     }
-    .luxury-glass {
-      background: rgba(15, 15, 22, 0.95);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+    .glass-nav {
+      background: rgba(8, 8, 10, 0.9);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      border-bottom: 1px solid rgba(201, 168, 106, 0.2);
     }
     .luxury-card {
-      background: rgba(20, 20, 28, 0.9);
-      border: 1px solid rgba(212, 175, 55, 0.25);
-      transition: all 0.3s ease;
+      background: rgba(16, 16, 22, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(201, 168, 106, 0.3);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     }
     .luxury-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 40px rgba(212, 175, 55, 0.2);
-      border-color: rgba(212, 175, 55, 0.7);
-    }
-    .ticker-wrap {
-      width: 100%;
-      overflow: hidden;
-      background: #000000;
-      color: #D4AF37;
-      border-bottom: 1px solid rgba(212, 175, 55, 0.2);
-    }
-    .ticker-move {
-      display: inline-block;
-      white-space: nowrap;
-      animation: ticker 35s linear infinite;
-    }
-    @keyframes ticker {
-      0% { transform: translate3d(0, 0, 0); }
-      100% { transform: translate3d(-50%, 0, 0); }
+      transform: translateY(-8px);
+      box-shadow: 0 30px 60px -15px rgba(201, 168, 106, 0.3);
+      border-color: rgba(201, 168, 106, 0.9);
     }
   </style>
 </head>
-<body class="selection:bg-[#D4AF37]/30 selection:text-white">
+<body class="selection:bg-[#C9A86A]/30 selection:text-white">
 
-  <!-- LIVE RATE TICKER -->
-  <div class="ticker-wrap py-2 text-[11px] font-semibold tracking-widest uppercase">
-    <div class="ticker-move">
-      <span class="mx-6">✦ 100% BIS Hallmarked 18K Gold Ornaments ✦</span>
-      <span class="mx-6">✦ Certified Pure 925 Silver Heirlooms ✦</span>
-      <span class="mx-6">✦ Pathwari Mandir, Gandhi Nagar, Firozabad ✦</span>
-      <span class="mx-6">✦ Call / WhatsApp Helpline: +91 9259263457 ✦</span>
-      <span class="mx-6">✦ 100% BIS Hallmarked 18K Gold Ornaments ✦</span>
-      <span class="mx-6">✦ Certified Pure 925 Silver Heirlooms ✦</span>
-      <span class="mx-6">✦ Pathwari Mandir, Gandhi Nagar, Firozabad ✦</span>
-      <span class="mx-6">✦ Call / WhatsApp Helpline: +91 9259263457 ✦</span>
-    </div>
+  <!-- TOP BRAND NOTIFICATION BAR -->
+  <div class="bg-[#040405] border-b border-[#C9A86A]/20 py-2.5 px-4 text-center text-[10px] sm:text-xs tracking-[0.25em] text-[#C9A86A] uppercase font-medium">
+    ✦ 100% BIS Hallmarked Gold &amp; Certified Diamonds • Pathwari Mandir, Gandhi Nagar, Firozabad ✦
   </div>
 
-  <!-- SIMPLE & CLEAN NAVIGATION BAR -->
-  <header class="sticky top-0 z-50 luxury-glass">
+  <!-- NAVIGATION BAR -->
+  <header class="sticky top-0 z-50 glass-nav">
     <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
       <a href="#hero" class="flex items-center gap-3">
-        <span class="text-[#D4AF37] text-2xl animate-spin" style="animation-duration: 15s;">✦</span>
+        <span class="text-[#C9A86A] text-2xl animate-spin" style="animation-duration: 12s;">✦</span>
         <div>
-          <span class="font-cinzel text-xl sm:text-2xl font-bold tracking-[0.2em] gold-gradient block leading-none">SURAAJ</span>
-          <span class="text-[7px] sm:text-[8px] tracking-[0.3em] text-zinc-400 uppercase font-semibold">JEWELLERS • Firozabad</span>
+          <span class="font-cormorant text-2xl sm:text-3xl tracking-[0.3em] font-bold gold-gradient block leading-none">SURAAJ</span>
+          <span class="text-[8px] sm:text-[9px] tracking-[0.35em] text-zinc-400 uppercase font-light">Jewellers (सूरज ज्वेलर्स) • Firozabad</span>
         </div>
       </a>
 
-      <!-- Customer Friendly Nav Links -->
-      <nav class="hidden lg:flex items-center space-x-6 text-xs font-semibold tracking-wider uppercase text-zinc-300">
-        <a href="#hero" class="hover:text-[#D4AF37] transition">Home</a>
-        <a href="#catalog" class="hover:text-[#D4AF37] transition">Collections</a>
-        <a href="#bespoke" class="hover:text-[#D4AF37] transition">Custom Design</a>
-        <a href="#lookbook" class="hover:text-[#D4AF37] transition">Bridal Sets</a>
-        <a href="#appointment" class="hover:text-[#D4AF37] transition">Book Visit</a>
-        <a href="#contact" class="hover:text-[#D4AF37] transition">Contact</a>
+      <!-- Navigation Links -->
+      <nav class="hidden lg:flex items-center space-x-8 text-xs font-medium tracking-[0.2em] uppercase text-zinc-300">
+        <a href="#hero" class="hover:text-[#C9A86A] transition">Home</a>
+        <a href="#catalog" class="hover:text-[#C9A86A] transition">Collections</a>
+        <a href="#bespoke" class="hover:text-[#C9A86A] transition">Bespoke Studio</a>
+        <a href="#lookbook" class="hover:text-[#C9A86A] transition">Bridal Lookbook</a>
+        <a href="#contact" class="hover:text-[#C9A86A] transition">Contact</a>
       </nav>
 
-      <!-- Customer Profile Button -->
+      <!-- Customer Action / Login -->
       <div class="flex items-center gap-3">
         <div id="auth-action-container">
-          <button onclick="openAuthModal()" class="px-4 py-2 rounded-full border border-[#D4AF37]/50 bg-[#D4AF37]/10 text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition text-xs tracking-wider font-bold flex items-center gap-2 shadow-md">
+          <button onclick="openAuthModal()" class="px-4 py-2 rounded-full border border-[#C9A86A]/40 bg-[#C9A86A]/10 text-[#C9A86A] hover:bg-[#C9A86A] hover:text-black transition text-xs tracking-wider font-semibold flex items-center gap-2 shadow-md">
             <i data-lucide="user" class="w-4 h-4"></i>
-            <span id="auth-btn-text">My Account / Sign In</span>
+            <span id="auth-btn-text">Sign In / Sign Up</span>
           </button>
         </div>
       </div>
@@ -125,60 +102,78 @@
   </header>
 
   <!-- HERO SECTION -->
-  <section id="hero" class="relative min-h-[85vh] flex items-center justify-center text-center px-4 py-20 overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-[#0c0c10]/85 to-[#0c0c10] -z-10"></div>
-    <div class="absolute inset-0 -z-20 opacity-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1920&q=80');"></div>
+  <section id="hero" class="relative min-h-[90vh] flex items-center justify-center text-center px-4 py-20 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-[#08080a]/85 to-[#08080a] -z-10"></div>
+    <div class="absolute inset-0 -z-20 opacity-35 bg-cover bg-center transform scale-105" style="background-image: url('https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1920&q=80');"></div>
+    
+    <div class="absolute w-[600px] h-[600px] rounded-full bg-[#C9A86A]/15 blur-[140px] pointer-events-none -z-10"></div>
 
-    <div class="max-w-4xl mx-auto space-y-6" data-aos="zoom-in" data-aos-duration="1200">
-      <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-[#D4AF37]/50 bg-[#D4AF37]/15 text-[#D4AF37] text-xs tracking-[0.25em] uppercase font-bold shadow-lg">
-        <span>✦ Gandhi Nagar, Firozabad ✦</span>
+    <div class="max-w-4xl mx-auto space-y-8" data-aos="zoom-out" data-aos-duration="1400">
+      <div class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border border-[#C9A86A]/50 bg-[#C9A86A]/15 text-[#C9A86A] text-xs tracking-[0.3em] uppercase font-semibold shadow-[0_0_35px_rgba(201,168,106,0.3)]">
+        <span>✦ Pathwari Mandir, Gandhi Nagar, Firozabad ✦</span>
       </div>
 
-      <h1 class="font-cinzel text-4xl sm:text-6xl lg:text-7xl font-bold tracking-wider leading-tight text-white">
-        Timeless Elegance.<br>
-        <span class="gold-gradient italic font-normal">Trusted Purity.</span>
+      <h1 class="font-playfair text-5xl sm:text-7xl lg:text-8xl font-normal leading-[1.08] text-white">
+        Suraaj Jewellers<br>
+        <span class="gold-gradient italic font-cormorant font-light">Bespoke Elegance &amp; Trust.</span>
       </h1>
 
-      <p class="text-xs sm:text-base text-zinc-300 max-w-xl mx-auto font-light leading-relaxed">
-        Explore 18K Hallmarked Gold, Pure 925 Silver, and Certified Solitaires. Easily browse or order custom designs directly via WhatsApp.
+      <p class="text-sm sm:text-base text-zinc-300 max-w-xl mx-auto font-light leading-relaxed tracking-wide">
+        Exquisite craftsmanship in 18K gold, pure 925 silver, and hand-selected natural solitaires. Located at Pathwari Mandir, Gandhi Nagar, Firozabad.
       </p>
 
-      <div class="pt-4 flex flex-wrap items-center justify-center gap-4">
-        <a href="#catalog" class="px-8 py-3.5 rounded-full gold-bg text-zinc-950 font-bold text-xs tracking-[0.2em] uppercase hover:opacity-90 transition shadow-xl">
-          View Collections
+      <div class="pt-6 flex flex-wrap items-center justify-center gap-4">
+        <a href="#catalog" class="px-8 py-4 rounded-full gold-bg text-black font-semibold text-xs tracking-[0.2em] uppercase hover:opacity-90 transition shadow-2xl">
+          Explore Catalog
         </a>
-        <a href="#bespoke" class="px-8 py-3.5 rounded-full luxury-card text-white hover:text-[#D4AF37] font-semibold text-xs tracking-[0.2em] uppercase transition">
-          Design Custom Jewellery
+        <a href="#bespoke" class="px-8 py-4 rounded-full luxury-card text-white hover:text-[#C9A86A] font-medium text-xs tracking-[0.2em] uppercase transition">
+          Design Your Own
         </a>
       </div>
     </div>
   </section>
 
-  <!-- EASY CUSTOM DESIGN STUDIO ("Design Your Own") -->
-  <section id="bespoke" class="py-20 px-4 sm:px-8 bg-[#09090e] border-y border-zinc-800">
+  <!-- DYNAMIC LIVE CATALOG -->
+  <section id="catalog" class="py-24 max-w-7xl mx-auto px-4 sm:px-8">
+    <div class="text-center space-y-3 mb-16" data-aos="fade-down">
+      <span class="text-xs uppercase tracking-[0.3em] text-[#C9A86A] font-semibold">Signature Showcase</span>
+      <h2 class="font-playfair text-3xl sm:text-5xl font-normal text-white">Our Exclusive Collections</h2>
+      <p class="text-xs sm:text-sm text-zinc-400 max-w-md mx-auto font-light">
+        Live synced from our store inventory database. BIS Hallmarked quality assurance.
+      </p>
+    </div>
+    <div id="catalog-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="text-center col-span-3 text-zinc-500 py-12 text-xs">Loading Catalog...</div>
+    </div>
+  </section>
+
+  <!-- BESPOKE / CUSTOM DESIGN STUDIO -->
+  <section id="bespoke" class="py-24 bg-[#050507] border-y border-zinc-800 px-4 sm:px-8">
     <div class="max-w-5xl mx-auto">
-      <div class="text-center space-y-2 mb-12" data-aos="fade-up">
-        <span class="text-xs uppercase tracking-[0.3em] text-[#D4AF37] font-bold">Custom Order Studio</span>
-        <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-white">Apni Pasand Ki Jewellery Banwayein</h2>
-        <p class="text-xs text-zinc-400 max-w-lg mx-auto">Apna design select karein, photo upload karein aur seedha hamari team se WhatsApp par jud jayein.</p>
+      <div class="text-center space-y-3 mb-16" data-aos="fade-down">
+        <span class="text-xs uppercase tracking-[0.3em] text-[#C9A86A] font-semibold">Custom Atelier</span>
+        <h2 class="font-playfair text-3xl sm:text-5xl font-normal text-white">Design Your Own Bespoke Piece</h2>
+        <p class="text-xs sm:text-sm text-zinc-400 max-w-md mx-auto font-light">
+          Upload your inspiration, select purity, and send your request directly to Suraaj Jewellers.
+        </p>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 luxury-card p-6 sm:p-10 rounded-3xl">
-        <div class="space-y-5">
+      <div class="luxury-card p-8 sm:p-12 rounded-3xl grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <div class="space-y-6">
           <div>
-            <label class="text-[10px] uppercase tracking-wider text-[#D4AF37] font-bold block mb-1">1. Jewellery Type (Kis Tarah ki Item Chahiye?)</label>
-            <select id="bespoke-type" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-[#D4AF37]">
-              <option>Gold Necklace / Set</option>
-              <option>Engagement Ring / Solitaire</option>
-              <option>Silver Payal / Kada / Utensils</option>
-              <option>Custom Pendant / Earrings</option>
+            <label class="text-[10px] uppercase tracking-wider text-zinc-300 font-semibold block mb-2">Select Jewellery Type</label>
+            <select id="bespoke-type" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-[#C9A86A]">
+              <option>Bridal Necklace Set</option>
+              <option>Certified Solitaire Ring</option>
+              <option>Traditional Polki Bangle</option>
+              <option>Custom Pendant &amp; Earrings</option>
             </select>
           </div>
 
           <div>
-            <label class="text-[10px] uppercase tracking-wider text-[#D4AF37] font-bold block mb-1">2. Metal Purity (Dhaatu)</label>
-            <select id="bespoke-metal" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-[#D4AF37]">
-              <option>18K Yellow Gold (BIS Hallmark)</option>
+            <label class="text-[10px] uppercase tracking-wider text-zinc-300 font-semibold block mb-2">Metal Purity</label>
+            <select id="bespoke-metal" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-[#C9A86A]">
+              <option>18K Yellow Gold (BIS Hallmarked)</option>
               <option>18K Rose Gold</option>
               <option>18K White Gold</option>
               <option>Pure 925 Silver</option>
@@ -186,169 +181,122 @@
           </div>
 
           <div>
-            <label class="text-[10px] uppercase tracking-wider text-[#D4AF37] font-bold block mb-1">3. Upload Reference Photo (Design ki Photo)</label>
-            <input type="file" class="w-full text-xs text-zinc-400 file:mr-4 file:py-2.5 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-[#D4AF37] file:text-black hover:file:opacity-90 cursor-pointer bg-zinc-900 border border-zinc-700 rounded-xl" />
+            <label class="text-[10px] uppercase tracking-wider text-zinc-300 font-semibold block mb-2">Upload Reference Image / Sketch</label>
+            <input type="file" class="w-full text-xs text-zinc-400 file:mr-4 file:py-2.5 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-semibold file:bg-[#C9A86A] file:text-black hover:file:opacity-90 cursor-pointer bg-zinc-900 border border-zinc-700 rounded-xl" />
           </div>
         </div>
 
-        <div class="space-y-6 bg-zinc-950 p-6 sm:p-8 rounded-2xl border border-zinc-800 flex flex-col justify-between text-center">
+        <div class="bg-zinc-950 p-8 rounded-2xl border border-zinc-800 flex flex-col justify-between text-center space-y-6">
           <div class="space-y-3">
-            <div class="w-12 h-12 rounded-full bg-[#D4AF37]/20 text-[#D4AF37] mx-auto flex items-center justify-center">
-              <i data-lucide="message-circle" class="w-6 h-6"></i>
-            </div>
-            <h3 class="font-cinzel text-xl font-bold text-white">Direct WhatsApp Order</h3>
-            <p class="text-xs text-zinc-400 leading-relaxed">
-              Form details bharne ke baad button dabate hi aapka message seedha hamare WhatsApp (+91 9259263457) par aa jayega jahan hum aapko best rate aur weight bata denge.
+            <div class="w-12 h-12 rounded-full bg-[#C9A86A]/20 text-[#C9A86A] mx-auto flex items-center justify-center font-bold text-lg">✦</div>
+            <h3 class="font-playfair text-2xl text-white">Direct WhatsApp Submission</h3>
+            <p class="text-xs text-zinc-400 leading-relaxed font-light">
+              Submit your bespoke specifications. Our family management will review your request and connect with you on WhatsApp (+91 9259263457).
             </p>
           </div>
-          <button onclick="submitBespokeRequest()" class="w-full py-3.5 rounded-xl gold-bg text-zinc-950 font-bold text-xs uppercase tracking-widest shadow-lg">
-            Send Custom Order to WhatsApp
+          <button onclick="submitBespokeRequest()" class="w-full py-3.5 rounded-xl gold-bg text-black font-semibold text-xs uppercase tracking-[0.2em] shadow-lg hover:opacity-90 transition">
+            Submit Custom Request
           </button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- LIVE INVENTORY CATALOG -->
-  <section id="catalog" class="py-20 px-4 sm:px-8 max-w-7xl mx-auto">
-    <div class="text-center space-y-2 mb-12" data-aos="fade-up">
-      <span class="text-xs uppercase tracking-[0.3em] text-[#D4AF37] font-bold">Live Store Catalog</span>
-      <h2 class="font-cinzel text-3xl sm:text-5xl font-bold text-white">Our Masterpieces</h2>
-      <p class="text-xs text-zinc-400 max-w-md mx-auto">Browse live items synced from our Google Sheet inventory.</p>
+  <!-- BRIDAL & OCCASION LOOKBOOK -->
+  <section id="lookbook" class="py-24 max-w-7xl mx-auto px-4 sm:px-8">
+    <div class="text-center space-y-3 mb-16" data-aos="fade-down">
+      <span class="text-xs uppercase tracking-[0.3em] text-[#C9A86A] font-semibold">Curated Collections</span>
+      <h2 class="font-playfair text-3xl sm:text-5xl font-normal text-white">Bridal &amp; Occasion Lookbook</h2>
+      <p class="text-xs sm:text-sm text-zinc-400 max-w-md mx-auto font-light">
+        Complete matching sets designed for royal celebrations and weddings.
+      </p>
     </div>
-    <div id="catalog-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="text-center col-span-3 text-zinc-500 py-12 text-xs">Loading Catalog...</div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="luxury-card p-8 rounded-3xl space-y-4">
+        <div class="h-64 rounded-2xl overflow-hidden bg-black">
+          <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=1000&q=80" class="w-full h-full object-cover hover:scale-105 transition duration-700" alt="Polki Bride">
+        </div>
+        <h3 class="font-playfair text-2xl text-white">The Royal Polki Bride</h3>
+        <p class="text-xs text-zinc-400 font-light leading-relaxed">Complete set featuring statement choker, jhumkas, and matching kadas.</p>
+        <a href="https://wa.me/919259263457?text=Namaste%20Suraaj%20Jewellers,%20I%20want%20to%20enquire%20about%20The%20Royal%20Polki%20Bride%20look." target="_blank" class="inline-flex items-center gap-2 text-xs font-semibold text-[#C9A86A] uppercase tracking-wider hover:underline">
+          <span>Enquire via WhatsApp</span> <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <div class="luxury-card p-8 rounded-3xl space-y-4">
+        <div class="h-64 rounded-2xl overflow-hidden bg-black">
+          <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1000&q=80" class="w-full h-full object-cover hover:scale-105 transition duration-700" alt="Solitaire Suite">
+        </div>
+        <h3 class="font-playfair text-2xl text-white">Modern Solitaire Suite</h3>
+        <p class="text-xs text-zinc-400 font-light leading-relaxed">Certified diamond ring and matching tennis bracelet for modern elegance.</p>
+        <a href="https://wa.me/919259263457?text=Namaste%20Suraaj%20Jewellers,%20I%20want%20to%20enquire%20about%20Modern%20Solitaire%20Suite." target="_blank" class="inline-flex items-center gap-2 text-xs font-semibold text-[#C9A86A] uppercase tracking-wider hover:underline">
+          <span>Enquire via WhatsApp</span> <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- BRIDAL LOOKBOOK -->
-  <section id="lookbook" class="py-20 px-4 sm:px-8 bg-[#09090e] border-t border-zinc-800">
-    <div class="max-w-7xl mx-auto">
-      <div class="text-center space-y-2 mb-12" data-aos="fade-up">
-        <span class="text-xs uppercase tracking-[0.3em] text-[#D4AF37] font-bold">Wedding Special</span>
-        <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-white">Bridal &amp; Occasion Sets</h2>
-        <p class="text-xs text-zinc-400 max-w-md mx-auto">Shaadi aur tyohar ke liye complete matched sets.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="luxury-card rounded-3xl overflow-hidden group p-6 space-y-4">
-          <div class="relative h-64 rounded-2xl overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=1000&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Royal Set">
+  <!-- FOOTER & SHOWROOM LOCATION -->
+  <footer id="contact" class="py-24 bg-[#040405] border-t border-zinc-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="space-y-6">
+          <span class="text-xs uppercase tracking-[0.3em] text-[#C9A86A] font-semibold">Concierge &amp; Showroom</span>
+          <h2 class="font-playfair text-4xl sm:text-5xl text-white">Suraaj Jewellers (सूरज ज्वेलर्स)</h2>
+          <div class="space-y-3 text-xs sm:text-sm text-zinc-300">
+            <p><strong>Address:</strong> Pathwari Mandir, Gandhi Nagar, Firozabad, Uttar Pradesh 283203</p>
+            <p><strong>Phone / WhatsApp:</strong> +91 9259263457</p>
+            <p><strong>Email:</strong> info.suraajjewellers@gmail.com</p>
+            <p><strong>Timings:</strong> 10:30 AM – 09:00 PM (Open All 7 Days)</p>
           </div>
-          <h3 class="font-cinzel text-2xl text-white">Traditional Wedding Set</h3>
-          <p class="text-xs text-zinc-400 leading-relaxed">Complete bridal necklace, earrings and mangtikka set in 18K gold.</p>
-          <a href="https://wa.me/919259263457?text=Namaste%20Suraaj%20Jewellers,%20I%20want%20to%20enquire%20about%20Traditional%20Wedding%20Set." target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-[#D4AF37] uppercase tracking-wider hover:underline">
-            <span>Enquire on WhatsApp</span> <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </a>
-        </div>
-
-        <div class="luxury-card rounded-3xl overflow-hidden group p-6 space-y-4">
-          <div class="relative h-64 rounded-2xl overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1000&q=80" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Solitaire Set">
+          <div class="pt-4">
+            <a href="https://wa.me/919259263457?text=Namaste%20Suraaj%20Jewellers,%20I%20am%20inquiring%20from%20your%20website." target="_blank" class="px-8 py-3.5 rounded-full gold-bg text-black font-semibold text-xs tracking-[0.2em] uppercase shadow-xl inline-block">
+              Chats on WhatsApp
+            </a>
           </div>
-          <h3 class="font-cinzel text-2xl text-white">Solitaire Ring &amp; Bracelet</h3>
-          <p class="text-xs text-zinc-400 leading-relaxed">Certified diamond ring and matching tennis bracelet.</p>
-          <a href="https://wa.me/919259263457?text=Namaste%20Suraaj%20Jewellers,%20I%20want%20to%20enquire%20about%20Solitaire%20Set." target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-[#D4AF37] uppercase tracking-wider hover:underline">
-            <span>Enquire on WhatsApp</span> <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </a>
+        </div>
+        <div class="h-80 sm:h-96 rounded-3xl overflow-hidden border border-zinc-800 shadow-2xl">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3548.8!2d78.39!3d27.15!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zUGF0aHdhcmkgTWFuZGly!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0; filter: invert(90%) hue-rotate(180deg) brightness(0.9);" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- EASY VIP APPOINTMENT BOOKING -->
-  <section id="appointment" class="py-20 px-4 sm:px-8 max-w-4xl mx-auto">
-    <div class="luxury-card p-6 sm:p-10 rounded-3xl space-y-6" data-aos="zoom-in">
-      <div class="text-center space-y-2">
-        <span class="text-xs uppercase tracking-[0.3em] text-[#D4AF37] font-bold">Showroom Visit</span>
-        <h2 class="font-cinzel text-2xl sm:text-3xl font-bold text-white">Store Visit Book Karein</h2>
-        <p class="text-xs text-zinc-400">Gandhi Nagar showroom aane se pehle apna time fix karein.</p>
+      <div class="mt-20 pt-8 border-t border-zinc-900 text-center text-xs text-zinc-500">
+        © 2026 SURAAJ JEWELLERS • FIROZABAD • ALL RIGHTS RESERVED
       </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div>
-          <label class="text-[10px] uppercase tracking-wider text-zinc-400 font-bold block mb-1">Aapka Naam (Name)</label>
-          <input id="appt-name" type="text" placeholder="e.g. Rahul Sharma" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-[#D4AF37]" />
-        </div>
-        <div>
-          <label class="text-[10px] uppercase tracking-wider text-zinc-400 font-bold block mb-1">Mobile Number (WhatsApp)</label>
-          <input id="appt-phone" type="tel" placeholder="9876543210" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-[#D4AF37]" />
-        </div>
-        <div>
-          <label class="text-[10px] uppercase tracking-wider text-zinc-400 font-bold block mb-1">Aana Kahan Hai?</label>
-          <select id="appt-mode" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-[#D4AF37]">
-            <option>Showroom Visit (Gandhi Nagar, Firozabad)</option>
-            <option>Video Call Consultation</option>
-          </select>
-        </div>
-        <div>
-          <label class="text-[10px] uppercase tracking-wider text-zinc-400 font-bold block mb-1">Date &amp; Time</label>
-          <input id="appt-datetime" type="datetime-local" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-[#D4AF37]" />
-        </div>
-      </div>
-
-      <button onclick="bookAppointment()" class="w-full py-3.5 rounded-xl gold-bg text-zinc-950 font-bold text-xs uppercase tracking-widest shadow-xl">
-        Book Appointment via WhatsApp
-      </button>
-    </div>
-  </section>
-
-  <!-- SHOWROOM LOCATION & FOOTER -->
-  <footer id="contact" class="py-20 bg-black text-zinc-400 text-xs px-4 sm:px-8 border-t border-zinc-800">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-      <div class="space-y-4">
-        <span class="text-[10px] uppercase tracking-[0.3em] text-[#D4AF37] font-bold">Showroom Address</span>
-        <h2 class="font-cinzel text-3xl text-white font-bold">Suraaj Jewellers (सूरज ज्वेलर्स)</h2>
-        <p class="leading-relaxed">Pathwari Mandir, Gandhi Nagar, Firozabad, Uttar Pradesh 283203</p>
-        <p><strong>Timings:</strong> 10:30 AM – 09:00 PM (Open All 7 Days)</p>
-        <p><strong>Mobile / WhatsApp:</strong> +91 9259263457</p>
-        <p><strong>Email:</strong> info.suraajjewellers@gmail.com</p>
-        <div class="pt-2">
-          <a href="https://wa.me/919259263457?text=Namaste%20Suraaj%20Jewellers,%20I%20am%20inquiring%20from%20the%20website." target="_blank" class="px-6 py-3 rounded-full gold-bg text-zinc-950 font-bold uppercase tracking-widest inline-block">
-            Chats (WhatsApp)
-          </a>
-        </div>
-      </div>
-      <div class="h-72 rounded-2xl overflow-hidden border border-zinc-800 shadow-xl">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3548.8!2d78.39!3d27.15!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zTmVhciBNYXRrYSBXYWxpIEJ1aWxkaW5n!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0; filter: invert(90%) hue-rotate(180deg) brightness(0.9);" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-    </div>
-    <div class="max-w-7xl mx-auto mt-16 pt-6 border-t border-zinc-900 text-center text-[10px] text-zinc-600">
-      © 2026 SURAAJ JEWELLERS • FIROZABAD • ALL RIGHTS RESERVED
     </div>
   </footer>
 
   <!-- FLOATING CHATS BUTTON -->
-  <a href="https://wa.me/919259263457?text=Namaste%20Suraaj%20Jewellers,%20I%20am%20inquiring%20from%20the%20website." target="_blank" class="fixed bottom-6 right-6 z-40 px-5 py-3.5 rounded-full gold-bg text-zinc-950 shadow-2xl hover:scale-110 transition flex items-center gap-2 font-bold text-xs uppercase tracking-wider">
+  <a href="https://wa.me/919259263457?text=Namaste%20Suraaj%20Jewellers,%20I%20am%20inquiring%20from%20your%20website." target="_blank" class="fixed bottom-6 right-6 z-40 px-5 py-3.5 rounded-full gold-bg text-black shadow-2xl hover:scale-110 transition flex items-center gap-2 font-semibold text-xs uppercase tracking-wider">
     <i data-lucide="message-circle" class="w-4 h-4"></i>
     <span>Chats</span>
   </a>
 
-  <!-- SIGN IN MODAL -->
+  <!-- SIGN IN / SIGN UP MODAL -->
   <div id="auth-modal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-md flex items-center justify-center p-4">
-    <div class="bg-white text-zinc-900 w-full max-w-md rounded-3xl p-8 relative shadow-2xl">
-      <button onclick="closeAuthModal()" class="absolute top-4 right-4 text-zinc-400 hover:text-black p-2"><i data-lucide="x" class="w-6 h-6"></i></button>
+    <div class="luxury-card w-full max-w-md rounded-3xl p-8 relative border border-[#C9A86A]/40 shadow-2xl">
+      <button onclick="closeAuthModal()" class="absolute top-4 right-4 text-zinc-400 hover:text-white p-2"><i data-lucide="x" class="w-6 h-6"></i></button>
       <div class="space-y-6">
         <div class="text-center space-y-2">
-          <div class="w-12 h-12 rounded-full bg-amber-100 text-amber-800 mx-auto flex items-center justify-center font-bold text-lg">✦</div>
-          <h3 class="font-cinzel text-2xl font-bold">Customer Login</h3>
-          <p class="text-xs text-zinc-500">Ek baar naam daalein taaki WhatsApp par direct baat ho sake.</p>
+          <div class="w-12 h-12 rounded-full bg-[#C9A86A]/20 text-[#C9A86A] mx-auto flex items-center justify-center font-bold text-lg">✦</div>
+          <h3 class="font-cormorant text-3xl font-bold text-white">Welcome Patron</h3>
+          <p class="text-xs text-zinc-400">Sign in once for seamless WhatsApp chat inquiries.</p>
         </div>
         <div class="space-y-4">
           <div>
-            <label class="text-[10px] uppercase tracking-wider text-zinc-600 font-bold block mb-1">Aapka Naam (Name)</label>
-            <input id="auth-name-input" type="text" placeholder="e.g. Rahul Sharma" class="w-full bg-zinc-100 border border-zinc-300 rounded-xl px-4 py-3 text-xs text-zinc-900 focus:outline-none focus:border-[#D4AF37]" />
+            <label class="text-[10px] uppercase tracking-wider text-zinc-300 font-semibold block mb-1">Your Name</label>
+            <input id="auth-name-input" type="text" placeholder="e.g. Rahul Sharma" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-[#C9A86A]" />
           </div>
           <div>
-            <label class="text-[10px] uppercase tracking-wider text-zinc-600 font-bold block mb-1">Mobile Number</label>
+            <label class="text-[10px] uppercase tracking-wider text-zinc-300 font-semibold block mb-1">Mobile Number</label>
             <div class="flex">
-              <span class="inline-flex items-center px-3 rounded-l-xl bg-zinc-200 border border-r-0 border-zinc-300 text-zinc-600 text-xs font-bold">+91</span>
-              <input id="auth-phone-input" type="tel" maxlength="10" placeholder="9876543210" class="w-full bg-zinc-100 border border-zinc-300 rounded-r-xl px-4 py-3 text-xs text-zinc-900 focus:outline-none focus:border-[#D4AF37]" />
+              <span class="inline-flex items-center px-3 rounded-l-xl bg-zinc-800 border border-r-0 border-zinc-700 text-zinc-400 text-xs font-semibold">+91</span>
+              <input id="auth-phone-input" type="tel" maxlength="10" placeholder="9876543210" class="w-full bg-zinc-900 border border-zinc-700 rounded-r-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-[#C9A86A]" />
             </div>
           </div>
         </div>
-        <button onclick="saveUserAuth()" class="w-full py-3.5 rounded-xl gold-bg text-zinc-950 font-bold text-xs uppercase tracking-widest shadow-md">
-          Save &amp; Continue
+        <button onclick="saveUserAuth()" class="w-full py-3.5 rounded-xl gold-bg text-black font-semibold text-xs uppercase tracking-[0.2em] shadow-lg hover:opacity-90 transition">
+          Sign In &amp; Proceed
         </button>
       </div>
     </div>
@@ -365,17 +313,17 @@
       const container = document.getElementById('auth-action-container');
       if (savedUser) {
         container.innerHTML = `
-          <div class="flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-emerald-600/40 bg-emerald-50 text-emerald-800 text-xs font-bold">
-            <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600"></i>
-            <span>${savedUser}</span>
-            <button onclick="logoutUser()" title="Sign Out" class="ml-1 text-zinc-400 hover:text-red-600 font-bold">×</button>
+          <div class="flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-emerald-500/40 bg-emerald-500/10 text-emerald-400 text-xs font-semibold">
+            <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-400"></i>
+            <span>Hello, ${savedUser}</span>
+            <button onclick="logoutUser()" title="Sign Out" class="ml-1 text-zinc-400 hover:text-white font-bold">×</button>
           </div>
         `;
       } else {
         container.innerHTML = `
-          <button onclick="openAuthModal()" class="px-4 py-2 rounded-full border border-[#D4AF37]/50 bg-[#D4AF37]/10 text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition text-xs tracking-wider font-bold flex items-center gap-2 shadow-md">
+          <button onclick="openAuthModal()" class="px-4 py-2 rounded-full border border-[#C9A86A]/40 bg-[#C9A86A]/10 text-[#C9A86A] hover:bg-[#C9A86A] hover:text-black transition text-xs tracking-wider font-semibold flex items-center gap-2 shadow-md">
             <i data-lucide="user" class="w-4 h-4"></i>
-            <span>My Account / Sign In</span>
+            <span>Sign In / Sign Up</span>
           </button>
         `;
       }
@@ -388,7 +336,7 @@
     function saveUserAuth() {
       const name = document.getElementById('auth-name-input').value.trim();
       const phone = document.getElementById('auth-phone-input').value.trim();
-      if (!name || !phone || phone.length < 10) { alert("Kripya apna naam aur valid 10-digit mobile number enter karein."); return; }
+      if (!name || !phone || phone.length < 10) { alert("Please enter valid name and 10-digit mobile number."); return; }
       localStorage.setItem('suraaj_user_name', name);
       localStorage.setItem('suraaj_user_phone', phone);
       closeAuthModal();
@@ -407,18 +355,7 @@
       const userName = localStorage.getItem('suraaj_user_name') || 'Customer';
       const userPhone = localStorage.getItem('suraaj_user_phone') || 'Not Provided';
       
-      const msg = encodeURIComponent(`Namaste Suraaj Jewellers,\n\nI want to place a Custom Order:\n- Item Type: ${type}\n- Metal: ${metal}\n\nCustomer Name: ${userName}\nMobile: ${userPhone}`);
-      window.open(`https://wa.me/919259263457?text=${msg}`, '_blank');
-    }
-
-    function bookAppointment() {
-      const name = document.getElementById('appt-name').value.trim();
-      const phone = document.getElementById('appt-phone').value.trim();
-      const mode = document.getElementById('appt-mode').value;
-      const datetime = document.getElementById('appt-datetime').value;
-
-      if (!name || !phone) { alert("Kripya apna naam aur mobile number bharein."); return; }
-      const msg = encodeURIComponent(`Namaste Suraaj Jewellers,\n\nI want to book an Appointment:\n- Name: ${name}\n- Mobile: ${phone}\n- Mode: ${mode}\n- Date/Time: ${datetime}`);
+      const msg = encodeURIComponent(`Namaste Suraaj Jewellers,\n\nI want to submit a Bespoke Design Request:\n- Type: ${type}\n- Metal: ${metal}\n\nClient Name: ${userName}\nMobile: ${userPhone}`);
       window.open(`https://wa.me/919259263457?text=${msg}`, '_blank');
     }
 
@@ -453,19 +390,19 @@
 
           grid.innerHTML += `
             <div class="luxury-card rounded-3xl overflow-hidden group shadow-2xl" data-aos="fade-up">
-              <div class="relative h-72 overflow-hidden bg-zinc-900">
+              <div class="relative h-72 overflow-hidden bg-black">
                 <img src="${img}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="${name}">
-                <span class="absolute top-3 left-3 px-3.5 py-1 rounded-full text-[10px] tracking-widest uppercase bg-black/85 text-[#D4AF37] border border-[#D4AF37]/40 font-bold">
+                <span class="absolute top-3 left-3 px-3.5 py-1 rounded-full text-[10px] tracking-widest uppercase bg-black/85 text-[#C9A86A] border border-[#C9A86A]/40 font-semibold">
                   ${weight ? 'Wt: ' + weight : 'Certified'}
                 </span>
               </div>
               <div class="p-6 space-y-4">
-                <h3 class="font-cinzel text-2xl text-white group-hover:text-[#D4AF37] transition">${name}</h3>
+                <h3 class="font-playfair text-2xl text-white group-hover:text-[#C9A86A] transition">${name}</h3>
                 <div class="flex justify-between items-center text-xs py-2 border-y border-zinc-800 text-zinc-400">
                   <span>Purity: <strong class="text-white">${purity || 'BIS Hallmark'}</strong></span>
-                  <span class="text-[#D4AF37] font-bold">In Stock</span>
+                  <span class="text-[#C9A86A] font-semibold">In Store</span>
                 </div>
-                <button onclick="handleWhatsAppEnquiry('${name}', '${weight}')" class="w-full py-3 rounded-full bg-[#D4AF37]/15 border border-[#D4AF37]/40 text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-2">
+                <button onclick="handleWhatsAppEnquiry('${name}', '${weight}')" class="w-full py-3 rounded-full bg-[#C9A86A]/15 border border-[#C9A86A]/40 text-[#C9A86A] hover:bg-[#C9A86A] hover:text-black transition text-xs font-semibold uppercase tracking-[0.15em] flex items-center justify-center gap-2">
                   <i data-lucide="message-circle" class="w-4 h-4"></i>
                   <span>Chats</span>
                 </button>
